@@ -1,0 +1,242 @@
+# Portuguese translations for Shared Expenses Application
+# Copyright (C) 2025
+# This file is distributed under the same license as the Shared Expenses package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-30 17:00+0100\n"
+"PO-Revision-Date: 2025-10-30 17:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# UI Labels
+msgid "Shared Expenses"
+msgstr "Despesas Partilhadas"
+
+msgid "Friends"
+msgstr "Amigos"
+
+msgid "Expenses"
+msgstr "Despesas"
+
+msgid "Add friend"
+msgstr "Adicionar amigo"
+
+msgid "Delete friend"
+msgstr "Eliminar amigo"
+
+msgid "Pay balance"
+msgstr "Pagar saldo"
+
+msgid "Delete all"
+msgstr "Eliminar tudo"
+
+msgid "Add expense"
+msgstr "Adicionar despesa"
+
+msgid "Edit expense"
+msgstr "Editar despesa"
+
+msgid "Delete expense"
+msgstr "Eliminar despesa"
+
+msgid "Refresh data"
+msgstr "Atualizar dados"
+
+msgid "Maximize"
+msgstr "Maximizar"
+
+msgid "Restore"
+msgstr "Restaurar"
+
+# Dialog labels
+msgid "Friend name:"
+msgstr "Nome do amigo:"
+
+msgid "Enter name"
+msgstr "Introduza o nome"
+
+msgid "Description:"
+msgstr "Descrição:"
+
+msgid "Amount:"
+msgstr "Montante:"
+
+msgid "Date (YYYY-MM-DD):"
+msgstr "Data (AAAA-MM-DD):"
+
+msgid "Participants:"
+msgstr "Participantes:"
+
+msgid "Who paid?"
+msgstr "Quem pagou?"
+
+msgid "Who participated?"
+msgstr "Quem participou?"
+
+msgid "Amount to pay:"
+msgstr "Quantia a pagar:"
+
+# Dialog buttons
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Add"
+msgstr "Adicionar"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Pay"
+msgstr "Pagar"
+
+# Status messages
+msgid "Loading..."
+msgstr "A carregar..."
+
+msgid "Loading data..."
+msgstr "A carregar dados..."
+
+msgid "Adding friend '{name}'..."
+msgstr "A adicionar amigo '{name}'..."
+
+msgid "Deleting friend '{name}'..."
+msgstr "A eliminar amigo '{name}'..."
+
+msgid "Adding expense '{description}'..."
+msgstr "A adicionar despesa '{description}'..."
+
+msgid "Deleting expense..."
+msgstr "A eliminar despesa..."
+
+msgid "Updating expense..."
+msgstr "A atualizar despesa..."
+
+msgid "Getting participants..."
+msgstr "A obter participantes..."
+
+msgid "Registering payment of {amount}..."
+msgstr "A registar pagamento de {amount}..."
+
+msgid "Deleting {count} expenses..."
+msgstr "A eliminar {count} despesas..."
+
+msgid "Deleting {count} friends..."
+msgstr "A eliminar {count} amigos..."
+
+# Success messages
+msgid "Friend '{name}' added successfully"
+msgstr "Amigo '{name}' adicionado com sucesso"
+
+msgid "Friend {name} deleted successfully"
+msgstr "Amigo {name} eliminado com sucesso"
+
+msgid "Expense '{description}' added successfully"
+msgstr "Despesa '{description}' adicionada com sucesso"
+
+msgid "Expense deleted successfully"
+msgstr "Despesa eliminada com sucesso"
+
+msgid "Expense updated successfully"
+msgstr "Despesa atualizada com sucesso"
+
+msgid "Payment of {amount} registered successfully"
+msgstr "Pagamento de {amount} registado com sucesso"
+
+msgid "{count} expenses deleted successfully"
+msgstr "{count} despesas eliminadas com sucesso"
+
+msgid "{count} friends deleted successfully"
+msgstr "{count} amigos eliminados com sucesso"
+
+# Error messages
+msgid "An error occurred"
+msgstr "Ocorreu um erro"
+
+msgid "Information"
+msgstr "Informação"
+
+msgid "Cannot connect to server. Verify that the server is running."
+msgstr "Não é possível ligar ao servidor. Verifique se o servidor está em execução."
+
+msgid "Server took too long to respond. Try again."
+msgstr "O servidor demorou muito a responder. Tente novamente."
+
+msgid "Error loading data: {error}"
+msgstr "Erro ao carregar dados: {error}"
+
+msgid "Error adding friend: {error}"
+msgstr "Erro ao adicionar amigo: {error}"
+
+msgid "Error deleting friend: {error}"
+msgstr "Erro ao eliminar amigo: {error}"
+
+msgid "Error adding expense: {error}"
+msgstr "Erro ao adicionar despesa: {error}"
+
+msgid "Error deleting expense: {error}"
+msgstr "Erro ao eliminar despesa: {error}"
+
+msgid "Error updating expense: {error}"
+msgstr "Erro ao atualizar despesa: {error}"
+
+msgid "Error getting participants: {error}"
+msgstr "Erro ao obter participantes: {error}"
+
+# Validation messages
+msgid "You must add friends first"
+msgstr "Tem de adicionar amigos primeiro"
+
+msgid "Amount must be greater than 0"
+msgstr "O montante tem de ser superior a 0"
+
+msgid "You must select at least one participant"
+msgstr "Deve seleccionar pelo menos um participante"
+
+msgid "Amount must be a valid number"
+msgstr "O montante deve ser um número válido"
+
+msgid "You must enter an amount"
+msgstr "Tem de introduzir um montante"
+
+msgid "Expense not found"
+msgstr "Despesa não encontrada"
+
+msgid "Cannot delete {name} because they have a pending balance of {amount}"
+msgstr "Não é possível eliminar {name} porque tem um saldo pendente de {amount}"
+
+msgid "No expenses to delete"
+msgstr "Não há despesas para eliminar"
+
+msgid "No friends to delete"
+msgstr "Não há amigos para eliminar"
+
+# Display labels
+msgid "Balance: {amount}"
+msgstr "Saldo: {amount}"
+
+msgid "Per person: {amount} ({count} people)"
+msgstr "Por pessoa: {amount} ({count} pessoas)"
+
+msgid "Paid by: {name}"
+msgstr "Pago por: {name}"
+
+msgid "Pay balance of {name}"
+msgstr "Pagar saldo de {name}"
+
+msgid "Unknown"
+msgstr "Desconhecido"
+
+# Error details
+msgid "Some friends could not be deleted"
+msgstr "Alguns amigos não puderam ser eliminados"
+
+msgid "Deleted {deleted} of {total} friends.\n\nFriends not deleted:\n{errors}"
+msgstr "Foram eliminados {deleted} de {total} amigos.\n\nAmigos não eliminados:\n{errors}"

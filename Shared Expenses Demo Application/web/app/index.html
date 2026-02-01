@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Aplicación para compartir gastos entre amigos">
+    <title>SplitWithMe - Compartir Gastos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Región de anuncios para lectores de pantalla -->
+    <div id="anuncios-live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+    
+    <header role="banner">
+        <h1 class="sr-only">SplitWithMe - Aplicación para compartir gastos</h1>
+    </header>
+    
+    <main id="contenido-principal">
+        <section class="panel" id="gastos-panel" aria-labelledby="gastos-heading" role="tabpanel" aria-label="Panel de gastos">
+            <div class="panel-header">
+                <h2 id="gastos-heading">Gastos</h2>
+                <div class="header-buttons">
+                    <button type="button" class="btn-header btn-agregar-header" aria-label="Agregar nuevo gasto">
+                        <span aria-hidden="true">+</span>
+                        <span class="sr-only">Agregar nuevo gasto</span>
+                    </button>
+                </div>
+            </div>
+            
+            <ul class="lista-items" id="lista-gastos" aria-label="Lista de gastos">
+                <li class="item-gasto">
+                    <div class="item-contenido">
+                        <span class="item-titulo">Cena en restaurante</span>
+                        <span class="item-detalle">Pagado por María</span>
+                    </div>
+                    <div class="item-derecha">
+                        <span class="item-monto"><span class="sr-only">Monto: 45 euros con 50 céntimos</span><span aria-hidden="true">€45.50</span></span>
+                        <div class="item-acciones" role="group" aria-label="Acciones para Cena en restaurante">
+                            <button type="button" class="btn-item btn-editar" aria-label="Editar gasto: Cena en restaurante">
+                                <span aria-hidden="true">✏️</span>
+                            </button>
+                            <button type="button" class="btn-item btn-eliminar" aria-label="Eliminar gasto: Cena en restaurante">
+                                <span aria-hidden="true">🗑️</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-gasto">
+                    <div class="item-contenido">
+                        <span class="item-titulo">Gasolina viaje</span>
+                        <span class="item-detalle">Pagado por Carlos</span>
+                    </div>
+                    <div class="item-derecha">
+                        <span class="item-monto"><span class="sr-only">Monto: 60 euros</span><span aria-hidden="true">€60.00</span></span>
+                        <div class="item-acciones" role="group" aria-label="Acciones para Gasolina viaje">
+                            <button type="button" class="btn-item btn-editar" aria-label="Editar gasto: Gasolina viaje">
+                                <span aria-hidden="true">✏️</span>
+                            </button>
+                            <button type="button" class="btn-item btn-eliminar" aria-label="Eliminar gasto: Gasolina viaje">
+                                <span aria-hidden="true">🗑️</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-gasto">
+                    <div class="item-contenido">
+                        <span class="item-titulo">Supermercado</span>
+                        <span class="item-detalle">Pagado por Ana</span>
+                    </div>
+                    <div class="item-derecha">
+                        <span class="item-monto"><span class="sr-only">Monto: 32 euros con 75 céntimos</span><span aria-hidden="true">€32.75</span></span>
+                        <div class="item-acciones" role="group" aria-label="Acciones para Supermercado">
+                            <button type="button" class="btn-item btn-editar" aria-label="Editar gasto: Supermercado">
+                                <span aria-hidden="true">✏️</span>
+                            </button>
+                            <button type="button" class="btn-item btn-eliminar" aria-label="Eliminar gasto: Supermercado">
+                                <span aria-hidden="true">🗑️</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-gasto">
+                    <div class="item-contenido">
+                        <span class="item-titulo">Entradas cine</span>
+                        <span class="item-detalle">Pagado por Pedro</span>
+                    </div>
+                    <div class="item-derecha">
+                        <span class="item-monto"><span class="sr-only">Monto: 28 euros</span><span aria-hidden="true">€28.00</span></span>
+                        <div class="item-acciones" role="group" aria-label="Acciones para Entradas cine">
+                            <button type="button" class="btn-item btn-editar" aria-label="Editar gasto: Entradas cine">
+                                <span aria-hidden="true">✏️</span>
+                            </button>
+                            <button type="button" class="btn-item btn-eliminar" aria-label="Eliminar gasto: Entradas cine">
+                                <span aria-hidden="true">🗑️</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="controles" role="group" aria-label="Controles de gastos">
+                <button type="button" class="btn-control btn-eliminar-todos" aria-label="Eliminar todos los gastos">
+                    <span aria-hidden="true">Eliminar todos</span>
+                </button>
+            </div>
+
+            <nav class="navegacion-mobile" aria-label="Navegación entre secciones" role="tablist">
+                <button type="button" class="nav-btn active" data-panel="gastos" role="tab" aria-selected="true" aria-controls="gastos-panel" id="tab-gastos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <span class="sr-only">Gastos</span>
+                </button>
+                <button type="button" class="nav-btn" data-panel="amigos" role="tab" aria-selected="false" aria-controls="amigos-panel" id="tab-amigos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span class="sr-only">Amigos</span>
+                </button>
+            </nav>
+        </section>
+
+        <section class="panel" id="amigos-panel" aria-labelledby="amigos-heading" role="tabpanel" aria-label="Panel de amigos">
+            <div class="panel-header">
+                <h2 id="amigos-heading">Amigos</h2>
+                <div class="header-buttons">
+                    <button type="button" class="btn-header btn-agregar-header" aria-label="Agregar nuevo amigo">
+                        <span aria-hidden="true">+</span>
+                        <span class="sr-only">Agregar nuevo amigo</span>
+                    </button>
+                    <button type="button" class="btn-header btn-pagar-header" aria-label="Pagar saldo pendiente">
+                        <span aria-hidden="true">$</span>
+                        <span class="sr-only">Pagar saldo pendiente</span>
+                    </button>
+                </div>
+            </div>
+            
+            <ul class="lista-items" id="lista-amigos" aria-label="Lista de amigos">
+                <li class="item-amigo">
+                    <div class="item-contenido">
+                        <span class="item-titulo">María González</span>
+                        <span class="item-detalle">4 gastos compartidos</span>
+                    </div>
+                    <div class="item-derecha">
+                        <span class="item-balance positivo"><span class="sr-only">Balance positivo: le deben 15 euros con 25 céntimos</span><span aria-hidden="true">+€15.25</span></span>
+                        <div class="item-acciones" role="group" aria-label="Acciones para María González">
+                            <button type="button" class="btn-item btn-editar" aria-label="Editar amigo: María González">
+                                <span aria-hidden="true">✏️</span>
+                            </button>
+                            <button type="button" class="btn-item btn-eliminar" aria-label="Eliminar amigo: María González">
+                                <span aria-hidden="true">🗑️</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-amigo">
+                    <div class="item-contenido">
+                        <span class="item-titulo">Carlos Martínez</span>
+                        <span class="item-detalle">3 gastos compartidos</span>
+                    </div>
+                    <div class="item-derecha">
+                        <span class="item-balance negativo"><span class="sr-only">Balance negativo: debe 22 euros con 50 céntimos</span><span aria-hidden="true">-€22.50</span></span>
+                        <div class="item-acciones" role="group" aria-label="Acciones para Carlos Martínez">
+                            <button type="button" class="btn-item btn-editar" aria-label="Editar amigo: Carlos Martínez">
+                                <span aria-hidden="true">✏️</span>
+                            </button>
+                            <button type="button" class="btn-item btn-eliminar" aria-label="Eliminar amigo: Carlos Martínez">
+                                <span aria-hidden="true">🗑️</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-amigo">
+                    <div class="item-contenido">
+                        <span class="item-titulo">Ana López</span>
+                        <span class="item-detalle">2 gastos compartidos</span>
+                    </div>
+                    <div class="item-derecha">
+                        <span class="item-balance positivo"><span class="sr-only">Balance positivo: le deben 8 euros con 75 céntimos</span><span aria-hidden="true">+€8.75</span></span>
+                        <div class="item-acciones" role="group" aria-label="Acciones para Ana López">
+                            <button type="button" class="btn-item btn-editar" aria-label="Editar amigo: Ana López">
+                                <span aria-hidden="true">✏️</span>
+                            </button>
+                            <button type="button" class="btn-item btn-eliminar" aria-label="Eliminar amigo: Ana López">
+                                <span aria-hidden="true">🗑️</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-amigo">
+                    <div class="item-contenido">
+                        <span class="item-titulo">Pedro Sánchez</span>
+                        <span class="item-detalle">5 gastos compartidos</span>
+                    </div>
+                    <div class="item-derecha">
+                        <span class="item-balance neutral"><span class="sr-only">Balance neutro: sin saldo pendiente</span><span aria-hidden="true">€0.00</span></span>
+                        <div class="item-acciones" role="group" aria-label="Acciones para Pedro Sánchez">
+                            <button type="button" class="btn-item btn-editar" aria-label="Editar amigo: Pedro Sánchez">
+                                <span aria-hidden="true">✏️</span>
+                            </button>
+                            <button type="button" class="btn-item btn-eliminar" aria-label="Eliminar amigo: Pedro Sánchez">
+                                <span aria-hidden="true">🗑️</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="controles" role="group" aria-label="Controles de amigos">
+                <button type="button" class="btn-control btn-eliminar-todos" aria-label="Eliminar todos los amigos">
+                    <span aria-hidden="true">Eliminar todos</span>
+                </button>
+                <button type="button" class="btn-control btn-pagar-footer" aria-label="Pagar saldo">
+                    <span aria-hidden="true">Pagar saldo</span>
+                </button>
+            </div>
+
+            <nav class="navegacion-mobile" aria-label="Navegación entre secciones" role="tablist">
+                <button type="button" class="nav-btn" data-panel="gastos" role="tab" aria-selected="false" aria-controls="gastos-panel" id="tab-gastos-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <span class="sr-only">Gastos</span>
+                </button>
+                <button type="button" class="nav-btn active" data-panel="amigos" role="tab" aria-selected="true" aria-controls="amigos-panel" id="tab-amigos-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span class="sr-only">Amigos</span>
+                </button>
+            </nav>
+        </section>
+    </main>
+
+    <script src="models.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

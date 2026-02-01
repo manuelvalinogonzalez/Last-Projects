@@ -1,0 +1,6 @@
+# Ignorar diagramas PlantUML
+*.puml
+.idea/
+.vscode/
+
+
