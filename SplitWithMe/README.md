@@ -30,3 +30,13 @@ To start the server and the application logic, run the following commands in you
 ```bash
 cd backend
 fastapi run
+```
+After this, run the 
+```bash 
+cd ..
+cd desktop/app
+./main.py 
+```
+
+### WEB
+* Just drag the index.html from web/app/index.html into the browser
